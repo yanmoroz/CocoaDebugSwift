@@ -1,0 +1,15 @@
+{
+  "originHash" : "7f2e0dc1dc4f82630fedfc3b3b749557e2d612e6683427733c967cf8f239d6fc",
+  "pins" : [
+    {
+      "identity" : "cocoadebugobjc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yanmoroz/CocoaDebugObjc.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "15db47d23d9d8adc5c94ccefc3e2665a27725308"
+      }
+    }
+  ],
+  "version" : 3
+}
