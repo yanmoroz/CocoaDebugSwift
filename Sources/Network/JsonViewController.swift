@@ -40,7 +40,7 @@ class JsonViewController: UIViewController {
     var justCancelCallback:(() -> Void)?
     
     static func instanceFromStoryBoard() -> JsonViewController {
-        let storyboard = UIStoryboard(name: "Network", bundle: Bundle(for: CocoaDebug.self))
+        let storyboard = UIStoryboard(name: "Network", bundle: Bundle.module)
         return storyboard.instantiateViewController(withIdentifier: "JsonViewController") as! JsonViewController
     }
     

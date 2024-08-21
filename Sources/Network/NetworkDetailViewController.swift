@@ -31,7 +31,7 @@ class NetworkDetailViewController: UITableViewController, MFMailComposeViewContr
     var justCancelCallback:(() -> Void)?
     
     static func instanceFromStoryBoard() -> NetworkDetailViewController {
-        let storyboard = UIStoryboard(name: "Network", bundle: Bundle(for: CocoaDebug.self))
+        let storyboard = UIStoryboard(name: "Network", bundle: Bundle.module)
         return storyboard.instantiateViewController(withIdentifier: "NetworkDetailViewController") as! NetworkDetailViewController
     }
     

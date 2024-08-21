@@ -55,9 +55,12 @@ class CocoaDebugTabBarController: UITabBarController {
     func setChildControllers() {
         
         //1.
-        let logs = UIStoryboard(name: "Logs", bundle: Bundle(for: CocoaDebug.self)).instantiateViewController(withIdentifier: "Logs")
-        let network = UIStoryboard(name: "Network", bundle: Bundle(for: CocoaDebug.self)).instantiateViewController(withIdentifier: "Network")
-        let app = UIStoryboard(name: "App", bundle: Bundle(for: CocoaDebug.self)).instantiateViewController(withIdentifier: "App")
+        let logs = UIStoryboard(name: "Logs", bundle: Bundle.module)
+            .instantiateViewController(withIdentifier: "Logs")
+        let network = UIStoryboard(name: "Network", bundle: Bundle.module)
+            .instantiateViewController(withIdentifier: "Network")
+        let app = UIStoryboard(name: "App", bundle: Bundle.module)
+            .instantiateViewController(withIdentifier: "App")
         
         //2.
         _Sandboxer.shared.isSystemFilesHidden = false

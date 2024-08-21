@@ -20,7 +20,8 @@ class CrashDetailViewController: UITableViewController {
     var crash: _CrashModel?
     
     static func instanceFromStoryBoard() -> CrashDetailViewController {
-        let storyboard = UIStoryboard(name: "App", bundle: Bundle(for: CocoaDebug.self))
+        
+        let storyboard = UIStoryboard(name: "App", bundle: Bundle.module)
         return storyboard.instantiateViewController(withIdentifier: "CrashDetailViewController") as! CrashDetailViewController
     }
     

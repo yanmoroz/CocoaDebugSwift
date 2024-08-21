@@ -61,9 +61,9 @@ extension CocoaDebugViewController: BubbleDelegate {
     
     func didTapBubble() {
         
-        let sb = UIStoryboard(name: "Manager", bundle: Bundle.module)
+        let storyboard = UIStoryboard(name: "Manager", bundle: Bundle.module)
         
-        guard let vc = sb.instantiateInitialViewController() else {
+        guard let vc = storyboard.instantiateInitialViewController() else {
             preconditionFailure()
         }
         
