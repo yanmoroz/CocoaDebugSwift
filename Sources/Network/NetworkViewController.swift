@@ -103,8 +103,7 @@ class NetworkViewController: UIViewController {
             self?.reloadHttp(needScrollToEnd: self?.reachEnd ?? true)
         }
         
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "NetworkCell", bundle: bundle)
+        let nib = UINib(nibName: "NetworkCell", bundle: Bundle.module)
         tableView.register(nib, forCellReuseIdentifier: "NetworkCell")
         
         tableView.tableFooterView = UIView()
