@@ -326,8 +326,7 @@ class NetworkDetailViewController: UITableViewController, MFMailComposeViewContr
         }
         
         //Use a separate xib-cell file, must be registered, otherwise it will crash
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "NetworkCell", bundle: bundle)
+        let nib = UINib(nibName: "NetworkCell", bundle: Bundle.module)
         tableView.register(nib, forCellReuseIdentifier: "NetworkCell")
         
         //header
