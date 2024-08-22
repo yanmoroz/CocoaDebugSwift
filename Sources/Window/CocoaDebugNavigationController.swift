@@ -21,7 +21,7 @@ class CocoaDebugNavigationController: UINavigationController {
         
         let selector = #selector(CocoaDebugNavigationController.exit)
         
-        let image = UIImage(named: "_icon_file_type_close", in: Bundle(for: CocoaDebugNavigationController.self), compatibleWith: nil)
+        let image = UIImage(named: "_icon_file_type_close", in: Bundle.module, compatibleWith: nil)
         let leftItem = UIBarButtonItem(image: image,
                                        style: .done, target: self, action: selector)
         leftItem.tintColor = Color.mainGreen
